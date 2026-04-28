@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AB Project — Abelson B. Mamattong Portfolio</title>
+  <title>AB Project — Abelson B. Mamattong | GHL Specialist & Creator</title>
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
     .card-hover:hover { transform: translateY(-8px); transition: all 0.3s ease; border-color: rgba(99, 102, 241, 0.4); }
     @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
     .float-anim { animation: float 4s ease-in-out infinite; }
+    .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
   </style>
 </head>
 <body class="overflow-x-hidden">
@@ -21,35 +22,89 @@
   <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#0a0a0f]/80 border-b border-white/5">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <img src="logo.png" alt="Logo" class="w-10 h-10 rounded-lg border border-white/10">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366f1] to-[#06b6d4] flex items-center justify-center font-bold text-white">AB</div>
         <span class="font-heading font-bold text-lg tracking-tight text-white">AB Project</span>
       </div>
       <div class="hidden md:flex gap-8 text-sm text-gray-400">
-        <a href="#intro" class="hover:text-white transition">Intro</a>
+        <a href="#about" class="hover:text-white transition">About</a>
         <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
         <a href="#contact" class="hover:text-white transition">Contact</a>
       </div>
-      <a href="#contact" class="px-6 py-2.5 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] rounded-full text-sm font-bold hover:opacity-90 transition">Hire Me</a>
+      <a href="mailto:anbcmg@gmail.com" class="px-6 py-2.5 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] rounded-full text-sm font-bold hover:opacity-90 transition">Hire Me</a>
     </div>
   </nav>
 
-  <section class="pt-32 pb-16 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+  <section class="pt-40 pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
     <div class="flex-1">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-indigo-400 mb-6">
         <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span> GHL Specialist Available
       </div>
-      <h1 class="font-heading text-5xl md:text-6xl font-bold leading-tight mb-4">
+      <h1 class="font-heading text-5xl md:text-7xl font-bold leading-tight mb-6">
         Abelson B.<br><span class="gradient-text">Mamattong</span>
       </h1>
-      <p class="text-gray-400 text-lg mb-8 max-w-lg mx-auto md:mx-0">Virtual Assistant | Funnel Creation | Automation </p>
+      <p class="text-gray-400 text-lg mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
+        Building high-converting funnels and seamless automations for growth-minded entrepreneurs. 
+      </p>
       <div class="flex gap-4 justify-center md:justify-start">
         <a href="#contact" class="px-8 py-3.5 bg-[#6366f1] rounded-full font-bold shadow-lg shadow-[#6366f1]/20 hover:scale-105 transition">Start a Project</a>
         <a href="#portfolio" class="px-8 py-3.5 border border-white/10 rounded-full font-bold hover:bg-white/5 transition">View Work</a>
       </div>
     </div>
-    <div class="float-anim">
-      <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl border-2 border-white/10 overflow-hidden shadow-2xl">
+    <div class="float-anim relative">
+      <div class="absolute -inset-4 bg-indigo-500/20 blur-3xl rounded-full"></div>
+      <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl border-2 border-white/10 overflow-hidden shadow-2xl relative z-10 bg-[#16161f]">
         <img src="profile.jpg" alt="Abelson" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 px-6 max-w-6xl mx-auto border-t border-white/5">
+    <div class="flex flex-col md:flex-row gap-16 items-center">
+      <div class="flex-1 space-y-6">
+        <h2 class="font-heading text-4xl font-bold">Behind the <span class="gradient-text">Systems</span></h2>
+        <p class="text-gray-400 leading-relaxed text-lg">
+          I am a professional Virtual Assistant and GoHighLevel (GHL) Specialist. My work focuses on assisting entrepreneurs and agencies by streamlining business systems and enhancing lead conversion strategies.
+        </p>
+        <p class="text-gray-400 leading-relaxed">
+          Under the brand <strong>AB Projects & Vlog</strong>, I blend technical CRM architecture with creative digital publishing. I don't just build workflows; I design experiences that help businesses scale efficiently.
+        </p>
+        <div class="grid grid-cols-2 gap-4 pt-4">
+          <div class="p-4 rounded-xl glass">
+            <h4 class="text-indigo-400 font-bold text-xl uppercase">Expert</h4>
+            <p class="text-xs text-gray-500 uppercase tracking-wider">GHL Workflow</p>
+          </div>
+          <div class="p-4 rounded-xl glass">
+            <h4 class="text-cyan-400 font-bold text-xl uppercase">Creative</h4>
+            <p class="text-xs text-gray-500 uppercase tracking-wider">Content Strategy</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex-1 grid grid-cols-2 gap-4">
+        <div class="space-y-4">
+          <div class="bg-[#16161f] p-6 rounded-2xl border border-white/5 hover:border-indigo-500/50 transition">
+            <i data-lucide="layout" class="text-indigo-500 mb-3 w-6 h-6"></i>
+            <h3 class="font-bold text-sm">Funnel Design</h3>
+            <p class="text-xs text-gray-500 mt-2">Conversion-optimized landing pages built for speed.</p>
+          </div>
+          <div class="bg-[#16161f] p-6 rounded-2xl border border-white/5 hover:border-indigo-500/50 transition">
+            <i data-lucide="zap" class="text-indigo-500 mb-3 w-6 h-6"></i>
+            <h3 class="font-bold text-sm">Automations</h3>
+            <p class="text-xs text-gray-500 mt-2">Complex n8n and GHL workflow integrations.</p>
+          </div>
+        </div>
+        <div class="space-y-4 mt-8">
+          <div class="bg-[#16161f] p-6 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition">
+            <i data-lucide="video" class="text-cyan-500 mb-3 w-6 h-6"></i>
+            <h3 class="font-bold text-sm">Content Creation</h3>
+            <p class="text-xs text-gray-500 mt-2">Social media assets and video editing via CapCut.</p>
+          </div>
+          <div class="bg-[#16161f] p-6 rounded-2xl border border-white/5 hover:border-cyan-500/50 transition">
+            <i data-lucide="settings" class="text-cyan-500 mb-3 w-6 h-6"></i>
+            <h3 class="font-bold text-sm">Tech Support</h3>
+            <p class="text-xs text-gray-500 mt-2">White-label setups and CRM maintenance.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -57,8 +112,8 @@
   <section id="intro" class="py-20 px-6 bg-white/5">
     <div class="max-w-4xl mx-auto">
       <div class="text-center mb-10">
-        <h2 class="font-heading text-3xl font-bold mb-2">Intro Video</h2>
-        <p class="text-gray-400 text-sm italic">My journey in GHL Workflow and Automation builds</p>
+        <h2 class="font-heading text-3xl font-bold mb-2">My Journey</h2>
+        <p class="text-gray-400 text-sm italic">An inside look at how I build systems for growth.</p>
       </div>
       <div class="aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
         <iframe 
@@ -75,55 +130,86 @@
 
   <section id="portfolio" class="py-24 px-6 max-w-6xl mx-auto">
     <div class="text-center mb-16">
-      <span class="text-[#6366f1] text-xs font-bold uppercase tracking-widest text-center block">My Works</span>
-      <h2 class="font-heading text-4xl font-bold mt-2">Project Showcases</h2>
+      <span class="text-[#6366f1] text-xs font-bold uppercase tracking-widest block">Featured Projects</span>
+      <h2 class="font-heading text-4xl font-bold mt-2">Client Success Stories</h2>
     </div>
     
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-    
-
-      <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5">
-        <img src="Sunshinerealty_sample_Automation.png" class="h-48 w-full object-cover border-b border-white/5">
-        <div class="p-6"><h3 class="font-bold text-sm">Lead Automation</h3><p class="text-xs text-gray-400 mt-1">GHL Workflow architecture.</p></div>
+      <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5 group">
+        <div class="overflow-hidden">
+          <img src="Sunshinerealty_sample_Automation.png" class="h-48 w-full object-cover border-b border-white/5 transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-base mb-2">Lead Nurture Automation</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">Multi-step GHL workflows including SMS/Email sequences and lead scoring to drive appointments.</p>
+        </div>
       </div>
 
-      <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5">
-        <img src="Funnel.png" class="h-48 w-full object-cover border-b border-white/5">
-        <div class="p-6"><h3 class="font-bold text-sm">GHL Funnel Creation</h3><p class="text-xs text-gray-400 mt-1">Custom GHL landing page build.</p></div>
+      <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5 group">
+        <div class="overflow-hidden">
+          <img src="Funnel.png" class="h-48 w-full object-cover border-b border-white/5 transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-base mb-2">Custom Funnel Architecture</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">Conversion-optimized landing pages for real estate and coaching niches with integrated lead capture.</p>
+        </div>
       </div>
 
-      <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5">
-        <img src="Sunshinerealty_sample_CRM.png" class="h-48 w-full object-cover border-b border-white/5">
-        <div class="p-6"><h3 class="font-bold text-sm">Pipeline Tracking</h3><p class="text-xs text-gray-400 mt-1">Opportunity management.</p></div>
+      <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5 group">
+        <div class="overflow-hidden">
+          <img src="Sunshinerealty_sample_CRM.png" class="h-48 w-full object-cover border-b border-white/5 transition duration-500 group-hover:scale-110">
+        </div>
+        <div class="p-6">
+          <h3 class="font-bold text-base mb-2">Pipeline Management</h3>
+          <p class="text-xs text-gray-400 leading-relaxed">Advanced CRM tracking systems developed to monitor lead lifecycle and revenue forecasting.</p>
+        </div>
       </div>
-
-      <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5">
-        <img src="Sunshinerealty_sample_profile.png" class="h-48 w-full object-cover border-b border-white/5">
-        <div class="p-6"><h3 class="font-bold text-sm">System Setup</h3><p class="text-xs text-gray-400 mt-1">White-label GHL config.</p></div>
-      </div>
-
     </div>
   </section>
 
-  <section id="contact" class="py-20 px-6">
-    <div class="max-w-2xl mx-auto bg-[#16161f] rounded-3xl p-8 md:p-12 border border-white/10 text-center shadow-2xl">
-      <h2 class="font-heading text-3xl font-bold mb-4">Let's Connect</h2>
-      <p class="text-indigo-400 font-medium mb-8">anbcmg@gmail.com</p>
+  <section class="py-12 bg-white/5 border-y border-white/5">
+    <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-8 md:gap-16 opacity-40 text-xs font-bold tracking-tighter uppercase">
+      <span>GoHighLevel</span>
+      <span>n8n</span>
+      <span>Canva</span>
+      <span>CapCut</span>
+      <span>Leonardo AI</span>
+      <span>YouTube Studio</span>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 px-6">
+    <div class="max-w-2xl mx-auto glass rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#6366f1] to-[#06b6d4]"></div>
+      <h2 class="font-heading text-4xl font-bold mb-4">Let's Build Together</h2>
+      <p class="text-gray-400 mb-8">Ready to automate your business and reclaim your time? Send me a message and let's discuss your project.</p>
+      <p class="text-indigo-400 font-bold text-xl mb-8">anbcmg@gmail.com</p>
       
       <div class="flex flex-wrap justify-center gap-6 mb-12">
-        <a href="https://www.linkedin.com/in/abel-son-374b45402" target="_blank" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-600/20 transition border border-white/5"><i data-lucide="linkedin"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=61588893358608" target="_blank" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600/20 transition border border-white/5"><i data-lucide="facebook"></i></a>
-        <a href="https://www.instagram.com/ig.its_abel/" target="_blank" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-pink-600/20 transition border border-white/5"><i data-lucide="instagram"></i></a>
+        <a href="https://www.linkedin.com/in/abel-son-374b45402" target="_blank" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-600 transition border border-white/5">
+          <i data-lucide="linkedin" class="w-5 h-5"></i>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61588893358608" target="_blank" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600 transition border border-white/5">
+          <i data-lucide="facebook" class="w-5 h-5"></i>
+        </a>
+        <a href="https://www.instagram.com/ig.its_abel/" target="_blank" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-pink-600 transition border border-white/5">
+          <i data-lucide="instagram" class="w-5 h-5"></i>
+        </a>
       </div>
 
-      <a href="mailto:anbcmg@gmail.com" class="inline-block px-12 py-4 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] rounded-2xl font-bold hover:scale-105 transition">Send Email</a>
+      <a href="mailto:anbcmg@gmail.com" class="inline-block px-12 py-4 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] rounded-2xl font-bold hover:scale-105 transition shadow-lg shadow-indigo-500/20">
+        Send Email
+      </a>
     </div>
   </section>
 
   <footer class="py-10 text-center border-t border-white/5 text-gray-600 text-sm">
-    © 2026 AB Project. Built with GHL Expertise.
+    <p>© 2026 AB Project. Optimized for Conversion.</p>
   </footer>
 
-  <script>lucide.createIcons();</script>
+  <script>
+    // Initialize Icons
+    lucide.createIcons();
+  </script>
 </body>
 </html>
