@@ -18,6 +18,7 @@
 </head>
 <body class="overflow-x-hidden">
 
+  <!-- NAV -->
   <nav class="fixed top-0 w-full z-50 backdrop-blur-md bg-[#0a0a0f]/80 border-b border-white/5">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -25,8 +26,9 @@
         <span class="font-heading font-bold text-lg tracking-tight text-white">AB Project</span>
       </div>
       <div class="hidden md:flex gap-8 text-sm text-gray-400">
+        <a href="#about" class="hover:text-white transition">About</a>
         <a href="#intro" class="hover:text-white transition">Intro</a>
-        <a href="#portfolio" class="hover:text-white transition">Portfolio</a>
+        <a href="#portfolio" class="hover:text-white transition">Works</a>
         <a href="#contact" class="hover:text-white transition">Contact</a>
       </div>
       <a href="#contact" class="px-6 py-2.5 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] rounded-full text-sm font-bold hover:opacity-90 transition">Hire Me</a>
@@ -55,112 +57,102 @@
     </div>
   </section>
 
-
-<!-- ABOUT ME -->
-<section class="py-20 px-6">
-  <div class="max-w-5xl mx-auto">
-    
-    <!-- Title -->
-    <div class="text-center mb-12">
-      <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">About Me</h2>
-      <p class="text-gray-400 max-w-2xl mx-auto">
-        Helping businesses grow through smart systems, automation, and high-converting funnels.
-      </p>
-    </div>
-
-    <!-- Content Grid -->
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      
-      <!-- Text -->
-      <div>
-        <p class="text-gray-400 leading-relaxed mb-6">
-          Hi, I’m Abelson Mamattong, a Virtual Assistant specializing in GoHighLevel, AI automation, and funnel building. I help businesses turn leads into paying clients by creating high-converting funnels, CRM systems, and automated workflows that run 24/7.
-        </p>
-        <p class="text-gray-400 leading-relaxed">
-          I focus on simplifying complex processes—whether it’s pipeline setup, follow-up automation, or full system builds—so you can save time and scale your business faster with confidence.
+  <!-- ABOUT -->
+  <section id="about" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">
+          Helping businesses grow through smart systems, automation, and high-converting funnels.
         </p>
       </div>
 
-      <!-- Feature Cards -->
-      <div class="grid grid-cols-2 gap-4">
-        
-        <div class="bg-[#16161f] p-5 rounded-2xl border border-white/5 text-center hover:border-indigo-500/30 transition">
-          <i data-lucide="cpu" class="mx-auto mb-3 text-indigo-400"></i>
-          <h3 class="text-sm font-bold">Automation</h3>
-          <p class="text-xs text-gray-400 mt-1">Smart workflows</p>
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-gray-400 leading-relaxed mb-6">
+            Hi, I’m Abelson Mamattong, a Virtual Assistant specializing in GoHighLevel, AI automation, and funnel building. I help businesses turn leads into paying clients by creating high-converting funnels, CRM systems, and automated workflows that run 24/7.
+          </p>
+          <p class="text-gray-400 leading-relaxed">
+            I focus on simplifying complex processes—whether it’s pipeline setup, follow-up automation, or full system builds—so you can save time and scale your business faster with confidence.
+          </p>
         </div>
 
-        <div class="bg-[#16161f] p-5 rounded-2xl border border-white/5 text-center hover:border-cyan-500/30 transition">
-          <i data-lucide="filter" class="mx-auto mb-3 text-cyan-400"></i>
-          <h3 class="text-sm font-bold">Funnels</h3>
-          <p class="text-xs text-gray-400 mt-1">High conversions</p>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-[#16161f] p-5 rounded-2xl border border-white/5 text-center">
+            <i data-lucide="cpu" class="mx-auto mb-3 text-indigo-400"></i>
+            <h3 class="text-sm font-bold">Automation</h3>
+            <p class="text-xs text-gray-400 mt-1">Smart workflows</p>
+          </div>
+
+          <div class="bg-[#16161f] p-5 rounded-2xl border border-white/5 text-center">
+            <i data-lucide="filter" class="mx-auto mb-3 text-cyan-400"></i>
+            <h3 class="text-sm font-bold">Funnels</h3>
+            <p class="text-xs text-gray-400 mt-1">High conversions</p>
+          </div>
+
+          <div class="bg-[#16161f] p-5 rounded-2xl border border-white/5 text-center">
+            <i data-lucide="database" class="mx-auto mb-3 text-indigo-400"></i>
+            <h3 class="text-sm font-bold">CRM Setup</h3>
+            <p class="text-xs text-gray-400 mt-1">Organized systems</p>
+          </div>
+
+          <div class="bg-[#16161f] p-5 rounded-2xl border border-white/5 text-center">
+            <i data-lucide="rocket" class="mx-auto mb-3 text-cyan-400"></i>
+            <h3 class="text-sm font-bold">Scaling</h3>
+            <p class="text-xs text-gray-400 mt-1">Business growth</p>
+          </div>
         </div>
-
-        <div class="bg-[#16161f] p-5 rounded-2xl border border-white/5 text-center hover:border-indigo-500/30 transition">
-          <i data-lucide="database" class="mx-auto mb-3 text-indigo-400"></i>
-          <h3 class="text-sm font-bold">CRM Setup</h3>
-          <p class="text-xs text-gray-400 mt-1">Organized systems</p>
-        </div>
-
-        <div class="bg-[#16161f] p-5 rounded-2xl border border-white/5 text-center hover:border-cyan-500/30 transition">
-          <i data-lucide="rocket" class="mx-auto mb-3 text-cyan-400"></i>
-          <h3 class="text-sm font-bold">Scaling</h3>
-          <p class="text-xs text-gray-400 mt-1">Business growth</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- INTRO VIDEO -->
-  <section id="intro" class="py-20 px-6 bg-white/5">
-    <div class="max-w-4xl mx-auto">
-      <div class="text-center mb-10">
-        <h2 class="font-heading text-3xl font-bold mb-2">Intro Video</h2>
-        <p class="text-gray-400 text-sm italic">My journey in GHL Workflow and Automation builds</p>
-      </div>
-      <div class="aspect-video rounded-3xl overflow-hidden border border-white/10 shadow-2xl bg-black">
-        <iframe 
-          class="w-full h-full" 
-          src="https://www.youtube.com/embed/2Nd6Kc_O8HQ?si=cXE20bJyOeJC9IvF" 
-          title="Intro Video" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          allowfullscreen>
-        </iframe>
       </div>
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
+  <!-- WORKS -->
   <section id="portfolio" class="py-24 px-6 max-w-6xl mx-auto">
     <div class="text-center mb-16">
       <span class="text-[#6366f1] text-xs font-bold uppercase tracking-widest text-center block">My Works</span>
-      <h2 class="font-heading text-4xl font-bold mt-2">Project Showcases</h2>
+      <h2 class="font-heading text-4xl font-bold mt-2">My Works</h2>
     </div>
-    
+
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
+
       <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5">
         <img src="Sunshinerealty_sample_Automation.png" class="h-48 w-full object-cover border-b border-white/5">
-        <div class="p-6"><h3 class="font-bold text-sm">Lead Automation</h3><p class="text-xs text-gray-400 mt-1">GHL Workflow architecture.</p></div>
+        <div class="p-6">
+          <h3 class="font-bold text-sm">Lead Automation</h3>
+          <p class="text-xs text-gray-400 mt-1">
+            Automated lead capture and follow-up system using GHL workflows to increase response rate and conversion.
+          </p>
+        </div>
       </div>
 
       <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5">
         <img src="Funnel.png" class="h-48 w-full object-cover border-b border-white/5">
-        <div class="p-6"><h3 class="font-bold text-sm">GHL Funnel Creation</h3><p class="text-xs text-gray-400 mt-1">Custom GHL landing page build.</p></div>
+        <div class="p-6">
+          <h3 class="font-bold text-sm">GHL Funnel Creation</h3>
+          <p class="text-xs text-gray-400 mt-1">
+            High-converting funnel designed to capture leads, nurture prospects, and drive sales using optimized landing pages.
+          </p>
+        </div>
       </div>
 
       <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5">
         <img src="Sunshinerealty_sample_CRM.png" class="h-48 w-full object-cover border-b border-white/5">
-        <div class="p-6"><h3 class="font-bold text-sm">Pipeline Tracking</h3><p class="text-xs text-gray-400 mt-1">Opportunity management.</p></div>
+        <div class="p-6">
+          <h3 class="font-bold text-sm">Pipeline Tracking</h3>
+          <p class="text-xs text-gray-400 mt-1">
+            Organized CRM pipeline setup for tracking leads, managing opportunities, and improving sales visibility.
+          </p>
+        </div>
       </div>
 
       <div class="card-hover bg-[#16161f] rounded-2xl overflow-hidden border border-white/5">
         <img src="Sunshinerealty_sample_profile.png" class="h-48 w-full object-cover border-b border-white/5">
-        <div class="p-6"><h3 class="font-bold text-sm">System Setup</h3><p class="text-xs text-gray-400 mt-1">White-label GHL config.</p></div>
+        <div class="p-6">
+          <h3 class="font-bold text-sm">System Setup</h3>
+          <p class="text-xs text-gray-400 mt-1">
+            Complete GoHighLevel system configuration including CRM, automations, and white-label business setup.
+          </p>
+        </div>
       </div>
 
     </div>
@@ -171,7 +163,7 @@
     <div class="max-w-2xl mx-auto bg-[#16161f] rounded-3xl p-8 md:p-12 border border-white/10 text-center shadow-2xl">
       <h2 class="font-heading text-3xl font-bold mb-4">Let's Connect</h2>
       <p class="text-indigo-400 font-medium mb-8">anbcmg@gmail.com</p>
-      
+
       <div class="flex flex-wrap justify-center gap-6 mb-12">
         <a href="https://www.linkedin.com/in/abel-son-374b45402" target="_blank" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-indigo-600/20 transition border border-white/5"><i data-lucide="linkedin"></i></a>
         <a href="https://www.facebook.com/profile.php?id=61588893358608" target="_blank" class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-blue-600/20 transition border border-white/5"><i data-lucide="facebook"></i></a>
